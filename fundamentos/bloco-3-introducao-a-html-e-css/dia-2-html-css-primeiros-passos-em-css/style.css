@@ -1,0 +1,26 @@
+<style>
+      h1{
+        size: 65px;
+        color: orange;
+        font-family: sans-serif;
+      }
+      p{
+        background-color: aqua;
+      }
+      p{
+        font-weight: 600;
+        font-size: 3em;
+      }
+      body{
+        font-size: 16px;
+      }
+      #yellow{
+        background-color: yellow;
+      }
+      #red{
+        background-color: red;
+      }
+      #brown{
+        background-color: brown;
+      }
+    </style>
