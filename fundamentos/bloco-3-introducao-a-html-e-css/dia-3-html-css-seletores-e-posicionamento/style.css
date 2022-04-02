@@ -27,3 +27,20 @@
   border-style: solid;
   border-color: black;
 }
+
+h1, p{
+  position: relative;
+  text-align: center;
+}
+
+ol li:hover{
+  background-color: blue;
+}
+
+ol li:active{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+}
