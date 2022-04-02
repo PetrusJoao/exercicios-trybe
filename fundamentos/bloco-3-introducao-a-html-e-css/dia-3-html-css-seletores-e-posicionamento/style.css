@@ -44,3 +44,8 @@ ol li:active{
 ul, ol{
   list-style: none;
 }
+
+h3:hover{
+  border-style: solid;
+  border-color: red;
+}
