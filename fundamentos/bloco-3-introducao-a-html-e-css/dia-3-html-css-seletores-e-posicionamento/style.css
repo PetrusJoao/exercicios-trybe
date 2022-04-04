@@ -33,19 +33,15 @@ h1, p{
   text-align: center;
 }
 
-ol li:hover{
+ol.agrupamentos li:hover{
   background-color: blue;
 }
 
-ol li:active{
+ol.agrupamentos li:active{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-ul, ol{
-  list-style: none;
-}
-
-h3:hover{
+.agrupamentos h3:hover{
   border-style: solid;
   border-color: red;
 }
@@ -83,4 +79,56 @@ h3:hover{
   width: 200px;
   left: 650px;
   top: 280px;
+}
+.combinações ol{
+  background-color: yellow;
+}
+
+.combinações ol li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+.combinações ol li:nth-of-type(even) {
+  color: green;
+}
+
+.combinações h1, .combinações h3{
+  color: red;
+}
+
+.combinações h1 em{
+  width: 40px;
+  border: solid black 1px;
+}
+
+.combinações li{
+  width: 20px;
+}
+
+.combinações li em{
+  font-weight: 700;
+}
+
+.linguagens ul li{
+  color: blue;
+}
+
+.combinações ul li a:hover:nth-of-type(1){
+  color: orange;
+}
+
+.combinações ul li a:hover:nth-of-type(2){
+  color: green;
+}
+
+.combinações ul li a:hover:nth-of-type(3){
+  color: black;
+}
+
+.combinações ul li a:hover:nth-of-type(4){
+  color: yellow;
+}
+
+.combinações ul li a:hover:nth-of-type(5){
+  color: rgb(36, 233, 36);
 }
