@@ -49,3 +49,38 @@ h3:hover{
   border-style: solid;
   border-color: red;
 }
+
+.super-mario {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+}
+
+.goomba {
+  position: relative;
+  z-index: 2;
+  width: 100px;
+  top: 300px
+}
+
+.baloon {
+  position: relative;
+  z-index: 3;
+  left: 500px;
+  bottom: 130px;
+}
+
+.speach {
+  position: relative;
+  z-index: 4;
+  font-size: 25px;
+  color: red;
+}
+
+.bowser {
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  left: 650px;
+  top: 280px;
+}
