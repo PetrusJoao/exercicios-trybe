@@ -1,3 +1,5 @@
+/*Parte I - Buscando elementos*/
+
 let ondeVoceEsta = document.getElementById("elementoOndeVoceEsta");
 console.log(ondeVoceEsta);
 let elementoPai = document.getElementById("elementoOndeVoceEsta").parentElement;
@@ -15,3 +17,15 @@ let ondeVoceEstaParaterceiroFilho = document.getElementById("elementoOndeVoceEst
 console.log(ondeVoceEstaParaterceiroFilho);
 let paiParaTerceiroFilho = document.getElementById("pai").children[2];
 console.log(paiParaTerceiroFilho);
+
+/*Parte II - Criando elementos*/
+
+let criaIrmaoOndeVoceEsta = document.createElement('section');
+criaIrmaoOndeVoceEsta.innerText = "teste"
+pai.appendChild(criaIrmaoOndeVoceEsta);
+let filhoDeOndeVoceEsta = document.createElement('p');
+filhoDeOndeVoceEsta.innerText = "teste teste"
+ondeVoceEsta.appendChild(filhoDeOndeVoceEsta);
+let filhoDePrimeiroFilhoDoFilho = document.createElement('p');
+filhoDePrimeiroFilhoDoFilho.innerText = "teste teste do teste"
+filhoDoFilho.appendChild(filhoDePrimeiroFilhoDoFilho);
