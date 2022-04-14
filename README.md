@@ -1,1 +1,1 @@
-#Repositório das atividades práticas e exercicios presentes no course.
+#Repositório das atividades práticas e exercícios presentes no course.
