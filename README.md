@@ -1,3 +1,1 @@
-#Alterações e Testes
-
--Segunda Alteração;
+#Repositório das atividades práticas e exercicios presentes no course.
