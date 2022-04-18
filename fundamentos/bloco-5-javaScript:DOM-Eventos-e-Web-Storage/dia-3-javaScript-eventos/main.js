@@ -38,9 +38,9 @@ function adicionaTech(event){
     event.target = li.classList.add("tech");
 }
 
-firstLi.addEventListener(onclick, adicionaTech);
-secondLi.addEventListener(onclick, adicionaTech);
-thirdLi.addEventListener(onclick, adicionaTech);
+firstLi.addEventListener('click', adicionaTech);
+secondLi.addEventListener('click', adicionaTech);
+thirdLi.addEventListener('click', adicionaTech);
 
 const classeTech = document.querySelector('.tech');
 
