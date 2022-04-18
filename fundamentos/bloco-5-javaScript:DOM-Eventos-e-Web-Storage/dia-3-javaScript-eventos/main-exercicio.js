@@ -25,5 +25,13 @@ for(let i = 0; i<dezDaysList.length; i++){
     let day = dezDaysList[i];
     const dezDays = document.createElement('li');
     dezDays.innerText = day;
-    document.getElementById('days').appendChild(dezDays);    
+    document.getElementById('days').appendChild(dezDays);
+    dezDays.className = "day"
+
+    if(day == 24 || day == 25 || day == 31 ){
+        dezDays.classList.add("day-holiday");
+    }
+    if(day == 4 || day == 11 || day == 18 || day == 25){
+        dezDays.classList.add("day-friday");
+    }
 }
