@@ -80,3 +80,25 @@ const botaoSextaFeira = document.createElement('button');
 botaoSextaFeira.id = "btn-friday"
 document.querySelector('.buttons-container').appendChild(botaoSextaFeira);
 botaoSextaFeira.innerText = "Sexta-feira"
+
+/*Exercício 5:
+Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias. */
+
+let clickSexta = document.getElementById('btn-friday')
+
+clickSexta.addEventListener("click", mudaCorFriday);
+clickSexta.addEventListener("dblclick", voltaCorFriday);
+
+function mudaCorFriday(){
+    for(let i=0; i<sextaFeira.length; i++){
+    let diaSexta = document.querySelectorAll(".day-friday")[i];
+    diaSexta.innerText = "Sexta-feira"
+    }
+}
+function voltaCorFriday(){
+    for(let i=0; i<sextaFeira.length; i++){
+    let diaSextaMarcked = document.querySelectorAll(".day-friday")[i];
+    diaSextaMarcked.innerText = sextaFeira[i]
+    }
+}
