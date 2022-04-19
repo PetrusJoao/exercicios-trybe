@@ -55,10 +55,17 @@ Implemente uma função que adicione ao botão "Feriados" um evento de "click" q
 let clickFeriado = document.getElementById('btn-holiday')
 
 clickFeriado.addEventListener("click", mudaCorHoliday);
+clickFeriado.addEventListener("dblclick", voltaCorHoliday);
 
 function mudaCorHoliday(){
     for(let i=0; i<feriados.length; i++){
     let diaFeriado = document.querySelectorAll(".day-holiday")[i];
     diaFeriado.style.backgroundColor = "red"
+    }
+}
+function voltaCorHoliday(){
+    for(let i=0; i<feriados.length; i++){
+    let diaFeriadoMarcked = document.querySelectorAll(".day-holiday")[i];
+    diaFeriadoMarcked.style.backgroundColor = "rgb(238,238,238)"
     }
 }
