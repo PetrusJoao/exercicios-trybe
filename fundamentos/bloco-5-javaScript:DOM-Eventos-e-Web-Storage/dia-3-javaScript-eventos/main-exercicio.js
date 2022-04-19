@@ -69,3 +69,14 @@ function voltaCorHoliday(){
     diaFeriadoMarcked.style.backgroundColor = "rgb(238,238,238)"
     }
 }
+
+/*Exercício 4:
+Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+Adicione a este botão o ID "btn-friday" .
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . */
+
+const sextaFeira = [4, 11, 18, 25];
+const botaoSextaFeira = document.createElement('button');
+botaoSextaFeira.id = "btn-friday"
+document.querySelector('.buttons-container').appendChild(botaoSextaFeira);
+botaoSextaFeira.innerText = "Sexta-feira"
