@@ -18,7 +18,7 @@ const lesson1 = {
     turno: 'noite',
   };
 
-/* // 1 - Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+// 1 - Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 
     const addTurno = {
         turno: 'noite',
@@ -40,9 +40,9 @@ const lesson1 = {
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
     const valores = (obj) => Object.values(obj);
-    console.log(valores(lesson1)); */
+    console.log(valores(lesson1));
 
 // 5 - Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign. Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3. Ao executar o comando console.log(allLessons), a saída deverá ser a seguinte:
     
-    const allLessons = Object.assign({}, lesson1, lesson2, lesson3);
-    console.log(allLessons)
+    const allLessons = Object.assign({}, {lesson1: lesson1}, {lesson2: lesson2}, {lesson3: lesson3});
+    console.log(allLessons);
