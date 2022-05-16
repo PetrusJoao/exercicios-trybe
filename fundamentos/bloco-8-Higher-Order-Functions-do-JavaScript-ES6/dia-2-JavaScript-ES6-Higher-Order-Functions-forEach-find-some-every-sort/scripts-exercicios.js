@@ -69,4 +69,14 @@ const books = [
     return books.author.birthYear === 1947; 
   }
 
-  console.log(books.find(authorBornIn1947));
+//   console.log(books.find(authorBornIn1947));
+  
+  // 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+
+  const expectedResult = false;
+
+function everyoneWasBornOnSecXX(sec) {
+  return sec >= 1900;
+}
+
+console.log(books.every(everyoneWasBornOnSecXX));
