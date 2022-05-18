@@ -92,4 +92,10 @@ const generoFicçao = books.filter((genre) => (genre.genre === 'Ficção Cientí
 
 const livrosMaisDe60 = books.filter((age) => (2022 - age.releaseYear >= 60)).sort();
 
-console.log(livrosMaisDe60);
+// console.log(livrosMaisDe60);
+
+// 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const arrayDeAutoresOrdenada = books.filter((genre) => (genre.genre === 'Ficção Científica' || genre.genre === 'Fantasia')).map((author) => author.author.name).sort();
+
+console.log(arrayDeAutoresOrdenada);
