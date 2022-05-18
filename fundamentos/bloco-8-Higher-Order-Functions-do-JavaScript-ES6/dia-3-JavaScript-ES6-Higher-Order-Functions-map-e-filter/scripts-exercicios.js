@@ -86,4 +86,10 @@ const nameAndAge = books.map((element) => {
 
 const generoFicçao = books.filter((genre) => (genre.genre === 'Ficção Científica' || genre.genre === 'Fantasia'));
 
-console.log(generoFicçao);
+// console.log(generoFicçao);
+
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho. Dica: use as funções filter e sort
+
+const livrosMaisDe60 = books.filter((age) => (2022 - age.releaseYear >= 60)).sort();
+
+console.log(livrosMaisDe60);
