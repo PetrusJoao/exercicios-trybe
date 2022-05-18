@@ -71,14 +71,19 @@ const arrayDeLivros = books.map((book) => `${book.name} - ${book.genre} - ${book
 
 // 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado. Dica: use as funções map, sort
 
-const arrayDeAutores = books.map((author) => {author.author.name});
+const arrayDeAutores = books.map((author) => {return author.author.name});
 
-const idadeAutores = books.map((author) => {return author.releaseYear - author.author.birthYear});
+const idadeAutores = books.map((author) => {return author.releaseYear - author.author.birthYear}).sort();
 
-// const autoresComIdade = books.map ((author, age) => `${author.author.name} - idade quando o livro foi lançado: ${author.releaseYear - author.author.birthYear}`);
+const nameAndAge = books.map((element) => {
+  let autorComIdade = {age: element.releaseYear - element.author.birthYear, author: element.author.name};
+  return autorComIdade;
+});
 
-const nameAndAge = books.map((author) => [{age: author.releaseYear - author.author.birthYear, author: author.author.name}]);
+// console.log(nameAndAge);
 
-console.log(nameAndAge);
+//  3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia. Dica: use a função filter;
 
+const generoFicçao = books.filter((genre) => (genre.genre === 'Ficção Científica' || genre.genre === 'Fantasia'));
 
+console.log(generoFicçao);
