@@ -105,3 +105,9 @@ const arrayDeAutoresOrdenada = books.filter((genre) => (genre.genre === 'Ficçã
 const livrosMaisDeSeisentaOrdenada = books.filter((age) => (2022 - age.releaseYear >= 60)).map((book) => book.name);
 
 // console.log(livrosMaisDeSeisentaOrdenada);
+
+// 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. Dica: cada inicial termina com um ponto.
+
+const authorComTresIniciais = books.filter((name) => (name.author.name.charAt(1) === '.' && name.author.name.charAt(7) === '.')).map((book) => book.name);
+
+console.log(authorComTresIniciais);
