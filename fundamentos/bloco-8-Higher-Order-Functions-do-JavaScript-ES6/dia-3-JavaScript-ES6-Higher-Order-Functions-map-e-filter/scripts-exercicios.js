@@ -98,4 +98,10 @@ const livrosMaisDe60 = books.filter((age) => (2022 - age.releaseYear >= 60)).sor
 
 const arrayDeAutoresOrdenada = books.filter((genre) => (genre.genre === 'Ficção Científica' || genre.genre === 'Fantasia')).map((author) => author.author.name).sort();
 
-console.log(arrayDeAutoresOrdenada);
+// console.log(arrayDeAutoresOrdenada);
+
+// 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+
+const livrosMaisDeSeisentaOrdenada = books.filter((age) => (2022 - age.releaseYear >= 60)).map((book) => book.name);
+
+// console.log(livrosMaisDeSeisentaOrdenada);
