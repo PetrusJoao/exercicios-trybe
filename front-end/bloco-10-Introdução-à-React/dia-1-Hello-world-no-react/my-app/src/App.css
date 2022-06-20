@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: antiquewhite;
 }
 
 .App-logo {
@@ -37,3 +37,30 @@
   }
 }
 
+.header {
+  color: blue;
+  text-align: center;
+}
+
+.content {
+  margin: auto;
+  max-width: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content ul li {
+  margin-top: 7px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #266fc5;
+}   
+
+.footer {
+  color: rgb(0, 60, 255);
+  text-align: center;
+}

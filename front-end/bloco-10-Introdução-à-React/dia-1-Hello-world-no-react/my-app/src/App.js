@@ -6,9 +6,17 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Content />
-      <Footer />
+      <header className='header'>
+        <Header />
+      </header>
+
+      <div className='content'>
+        <Content />
+      </div>
+
+      <footer className='footer'>
+        <Footer />
+      </footer>
     </div>
   );
 }
